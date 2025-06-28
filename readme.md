@@ -63,7 +63,7 @@ You can run the project locally:
    ```
 3. (Optional) If you want to use the Node.js server for local testing, install dependencies (if any) and start the server:
    ```bash
-   node server.js
+   node server.mjs
    ```
    The app will be available at [http://localhost:3000](http://localhost:3000).
 
