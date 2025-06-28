@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" id="html-root">
+
+<head id="head-section">
+    <meta charset="utf-8" id="meta-charset">
+    <meta name="viewport" content="width=device-width, initial-scale=1" id="meta-viewport">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" id="bootstrap-css">
+    <title id="title-main">Pdf merger website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body-main">
+    <nav class="navbar" style="background-color: rgb(36, 49, 82);" id="navbar-main">
+        <div class="container-fluid justify-content-center d-flex" id="navbar-container">
+            <span class="navbar-text text-white fs-2 text-center w-100" id="navbar-title">
+                PDF Merger
+            </span>
+        </div>
+    </nav>
+    <div class="container custom-container mt-5 d-flex flex-column align-items-center justify-content-center border border-black rounded-end shadow-sm"
+        style="max-width: 500px; min-height: 60vh;" id="main-container">
+        <label for="pdf1" class="form-label fw-bold text-center w-100" id="label-pdf1">Input PDF 1</label>
+        <input type="file" id="pdf1" accept="application/pdf" class="mb-2 w-100">
+        <span class="mb-2" id="or-span">or</span>
+        <label for="pdf2" class="form-label fw-bold text-center w-100" id="label-pdf2">Input PDF 2</label>
+        <input type="file" id="pdf2" accept="application/pdf" class="mb-4 w-100">
+        <div class="d-flex gap-2 mb-2 flex-wrap justify-content-center w-100" id="button-group">
+            <button type="button" class="btn btn-success btn-lg flex-fill" id="merge-btn" onclick="mergePDF()">Merge</button>
+            <button type="button" class="btn btn-danger btn-lg flex-fill" id="reset-btn">Reset</button>
+        </div>
+        <div id="final-pdf" class="w-100 justify-content-center d-flex flex-wrap">
+            <button type="button" class="btn btn-primary btn-lg flex-fill" id="download-btn">Download</button>
+        </div>
+    </div>
+    <script src="script.js" defer type="module"></script>
+</body>
+
+</html>

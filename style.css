@@ -1,0 +1,11 @@
+        @media (max-width: 576px) {
+            .custom-container {
+                min-width: 95vw !important;
+                padding: 1rem !important;
+                border-radius: 0.5rem !important;
+            }
+
+            .navbar-text {
+                font-size: 1.3rem !important;
+            }
+        }
